@@ -25,6 +25,7 @@ class Player:
         this.score = 0
         this.playerId = Player.playerCount
         Player.playerCount += 1
+        Player.playerList.append(this)
     
     def setImposter(this):
         this.isImposter = True
@@ -71,7 +72,7 @@ if __name__ == "__main__":
     while inputPlayers != '!done':
         inputPlayers = input('Enter player name: ')
         if inputPlayers not in ('!done', '') + Player.getNameList():
-            Player.playerList.append(Player(inputPlayers.strip()))
+            Player(inputPlayers.strip())
     clearScreen()
 
     # Get the imposter count
