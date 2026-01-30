@@ -1,2 +1,4 @@
 # imposter-game
-A personal version of the Imposter game to play custom games with friends
+Multiple games exist with this concept.
+
+The rules are straightforward. After all the player names are entered and the number of imposters has been selected, the players will pick a category to play from. All of the players will then be told either if they are the imposter or what the word is. The game will announce who goes first, then all the players will take turns saying a word or phrase related to the word (but not too obviously) to 1) prove they are not the imposter and 2) keep the imposter from guessing the word. After n number of rounds, everyone will guess who the imposter is, and the imposter will reveal themselves and guess the word.
