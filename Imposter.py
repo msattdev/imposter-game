@@ -71,8 +71,10 @@ if __name__ == "__main__":
     inputPlayers = ''
     while inputPlayers != '!done':
         inputPlayers = input('Enter player name: ')
-        if inputPlayers not in ('!done', '') + Player.getNameList():
+        if inputPlayers not in ['!done', ''] + Player.getNameList():
             Player(inputPlayers.strip())
+        elif inputPlayers in Player.getNameList():
+            print('You cannot have repeat names')
     clearScreen()
 
     # Get the imposter count
@@ -115,5 +117,6 @@ if __name__ == "__main__":
     for x in imposters:
         x.setImposter()
     
+    # Give players the word
     for x in Player.playerList:
         print(f'{x.getName()} {x.getWord()}')
