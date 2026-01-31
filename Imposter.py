@@ -2,71 +2,57 @@ from os import system, listdir
 from platform import system as os
 from random import sample, choice
 
-inputPlayers  = ''
-imposterCount = 0
-inputCount    = ''
-dictList      = list(x[:-4] for x in listdir('dictionaries') if x[-4:] == '.txt')
-index         = 0
-indexSelector = ''
-userIndex     = 0
-currentFile   = ''
-wordCount     = 0
-imposters     = []
-wordList      = []
-votedImposter = []
-
 class Player:
     playerCount = 0
     currentWord = ''
-    playerList    = []
+    playerList  = []
 
-    def __init__(this, playerName):
-        this.name = playerName
-        this.isImposter = False
-        this.score = 0
-        this.playerId = Player.playerCount
+    def __init__(self, playerName: str):
+        self.name = playerName
+        self.isImposter = False
+        self.score = 0
+        self.playerId = Player.playerCount
         Player.playerCount += 1
-        Player.playerList.append(this)
+        Player.playerList.append(self)
     
-    def setImposter(this):
-        this.isImposter = True
+    def setImposter(self) -> None:
+        self.isImposter = True
         return
 
-    def reset(this):
-        this.isImposter = False
+    def reset(self) -> None:
+        self.isImposter = False
         return
     
-    def getId(this):
-        return this.playerId
+    def getId(self) -> int:
+        return self.playerId
     
-    def getWord(this):
-        if this.isImposter:
+    def getWord(self) -> str:
+        if self.isImposter:
             return "Imposter"
         else:
             return Player.currentWord
     
-    def getName(this):
-        return this.name
+    def getName(self) -> str:
+        return self.name
     
     @classmethod
-    def setWord(cls, newWord):
+    def setWord(cls, newWord: str) -> None:
         cls.currentWord = newWord
     
     @classmethod
-    def getNameList(cls):
+    def getNameList(cls) -> list[str]:
         returnList = []
         for x in cls.playerList:
             returnList.append(x.getName())
         return returnList
 
-def clearScreen():
+def clearScreen() -> None:
     if os() == 'Windows':
         system('cls')
     else:
         system('clear')
 
-def conjunction(nameList):
-    joinedString = ''
+def conjunction(nameList: list[str]) -> str:
     if len(nameList) == 0:
         return ''
     elif len(nameList) == 1:
@@ -75,11 +61,24 @@ def conjunction(nameList):
         return ' and '.join(nameList)
     else:
         return ', '.join(nameList[:-1]) + ', and ' + nameList[len(nameList) - 1]
-
-if __name__ == "__main__":
-    clearScreen()
-
+    
+def main() -> None:
+    # Variables
+    inputPlayers  = ''
+    imposterCount = 0
+    inputCount    = ''
+    dictList      = [x[:-4] for x in listdir('dictionaries') if x[-4:] == '.txt']
+    index         = 0
+    indexSelector = ''
+    userIndex     = 0
+    currentFile   = ''
+    wordCount     = 0
+    imposters     = []
+    wordList      = []
+    votedImposter = []
+    
     # Get the player list
+    clearScreen()
     inputPlayers = ''
     print('Enter "!done" when finished.')
     while inputPlayers != '!done':
@@ -132,9 +131,9 @@ if __name__ == "__main__":
     # Give players the word
     for x in Player.playerList:
         clearScreen()
-        print(f'{x.getName()}')
+        print(x.getName())
         input('Press enter to reveal the word...')
-        print(f'{x.getWord()}')
+        print(x.getWord())
         input('Press enter continue...')
 
     # Select first player
@@ -166,3 +165,6 @@ if __name__ == "__main__":
     clearScreen()
     input(f'{conjunction(votedImposter)} {"was" if imposterCount == 1 else "were"} voted imposter...')
     print(f'{conjunction([x.getName() for x in Player.playerList if x.isImposter])}, what is the word?')
+
+if __name__ == "__main__":
+    main()
