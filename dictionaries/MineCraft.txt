@@ -1,0 +1,97 @@
+Diamond
+Emerald
+Gold Ingot
+Iron Ingot
+Copper Ingot
+Netherite Ingot
+Coal
+Redstone
+Lapis Lazuli
+Quartz
+Amethyst Shard
+Stick
+String
+Feather
+Flint
+Leather
+Gunpowder
+Bone
+Bone Meal
+Arrow
+Bow
+Crossbow
+Fishing Rod
+Shears
+Clock
+Compass
+Map
+Book
+Enchanted Book
+Paper
+Sugar Cane
+Wheat
+Carrot
+Potato
+Beetroot
+Apple
+Golden Apple
+Enchanted Golden Apple
+Melon Slice
+Pumpkin
+Baked Potato
+Bread
+Cookie
+Cake
+Mushroom Stew
+Rabbit Stew
+Beetroot Soup
+Suspicious Stew
+Milk Bucket
+Water Bucket
+Lava Bucket
+Bucket
+Cod
+Salmon
+Tropical Fish
+Pufferfish
+Cooked Cod
+Cooked Salmon
+Cooked Porkchop
+Steak
+Cooked Chicken
+Cooked Mutton
+Cooked Rabbit
+Spider Eye
+Fermented Spider Eye
+Blaze Powder
+Ghast Tear
+Magma Cream
+Slimeball
+Ender Pearl
+Eye of Ender
+Nether Star
+Totem of Undying
+Phantom Membrane
+Shulker Shell
+Elytra
+TNT
+Obsidian
+Bedrock
+End Stone
+Netherrack
+Soul Sand
+Crying Obsidian
+Respawn Anchor
+Beacon
+Enchanting Table
+Anvil
+Grindstone
+Loom
+Smithing Table
+Fletching Table
+Cartography Table
+Barrel
+Chest
+Trapped Chest
+Ender Chest
+Shulker Box
