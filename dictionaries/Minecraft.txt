@@ -16,7 +16,6 @@ Flint
 Leather
 Gunpowder
 Bone
-Bone Meal
 Arrow
 Bow
 Crossbow
@@ -28,24 +27,13 @@ Map
 Book
 Enchanted Book
 Paper
-Sugar Cane
-Wheat
-Carrot
-Potato
-Beetroot
 Apple
 Golden Apple
-Enchanted Golden Apple
 Melon Slice
 Pumpkin
-Baked Potato
 Bread
 Cookie
 Cake
-Mushroom Stew
-Rabbit Stew
-Beetroot Soup
-Suspicious Stew
 Milk Bucket
 Water Bucket
 Lava Bucket
@@ -54,15 +42,12 @@ Cod
 Salmon
 Tropical Fish
 Pufferfish
-Cooked Cod
-Cooked Salmon
-Cooked Porkchop
+Porkchop
+Chicken
+Mutton
+Rabbit
 Steak
-Cooked Chicken
-Cooked Mutton
-Cooked Rabbit
 Spider Eye
-Fermented Spider Eye
 Blaze Powder
 Ghast Tear
 Magma Cream
@@ -81,17 +66,51 @@ End Stone
 Netherrack
 Soul Sand
 Crying Obsidian
-Respawn Anchor
-Beacon
+Crafting Table
+Furnace
+Blast Furnace
+Smoker
 Enchanting Table
 Anvil
 Grindstone
-Loom
 Smithing Table
-Fletching Table
-Cartography Table
+Loom
 Barrel
 Chest
-Trapped Chest
 Ender Chest
 Shulker Box
+Beacon
+Zombie
+Skeleton
+Creeper
+Spider
+Enderman
+Witch
+Villager
+Iron Golem
+Snow Golem
+Piglin
+Piglin Brute
+Blaze
+Ghast
+Wither Skeleton
+Shulker
+Phantom
+Ender Dragon
+Wither
+Dirt
+Grass Block
+Stone
+Cobblestone
+Sand
+Gravel
+Oak Log
+Oak Planks
+Glass
+Bricks
+Bookshelf
+Torch
+Lantern
+Ladder
+Rail
+Redstone Torch
